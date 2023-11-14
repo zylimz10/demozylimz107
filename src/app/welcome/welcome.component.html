@@ -1,0 +1,7 @@
+<div *ngIf="user" class="container">
+    <h2>Welcome!</h2>
+    <p>name: {{ user.name }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Role: {{ user.role }}</p>
+    <a *ngIf="user.role === 'MANAGER'" routerLink="/special">go to restricted page</a>
+</div>
